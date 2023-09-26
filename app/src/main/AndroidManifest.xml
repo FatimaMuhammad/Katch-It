@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.katche_it">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeNoActionBar"
+        tools:targetApi="31">
+        <activity
+            android:name=".activities.activity.VideoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.activity.DisplayProductsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.activity.AddProductsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.activity.ShowBrandsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.activity.ResultActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.activity.ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.activity.QuestionActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.activity.SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.activity.BrandActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.activity.UserBrandActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.activity.MainActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".activities.activity.SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.activity.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.activity.LoginIntroActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

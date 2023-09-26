@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="violet">#6D14c4</color>
+    <color name="VV">#6a328f</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="colorPrimary">#471B55</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#90D611</color>
+    <color name="yellow">#F1F70E</color>
+    <color name="red">#f70e12</color>
+    <color name="blue">#1881B1</color>
+    <color name="lightgreen">#A5F927</color>
+    <color name="XYZ">#58D0FD</color>
+    <color name="Blue">#87ceeb</color>
+    <color name="orange">#FFAD21</color>
+
+    <color name="color_bg">#000080</color>"
+    <color name="red_09">#FF0025</color>
+    <color name="oran_ge">#ff5500</color>
+    <color name="y_low">#ffd700</color>
+    <color name="maron98">#800000</color>
+    <color name="Red">#FF0000</color>
+    <color name="grassgreen">#008000</color>
+    <color name="greenbottom">#008900</color>
+    <color name="greenpcb">#002d04</color>
+    <color name="themesgreen">#5fb307</color>
+    <color name="colorpPrimary">#583678</color>
+    <color name="colorPrimEry">#58386B</color>
+    <color name="colordrkPrimary">#633B77</color>
+    <color name="colordarkPrimary">#18206F</color>
+    <color name="colorPrimaryDark">#11164E</color>
+    <color name="colorAccent">#ffd700</color>
+    <color name="colorPrimaryText">#18206F</color>
+    <color name="colorPrimaryTextOpaque">#18206F</color>
+    <color name="colorPrimaryButton">#FFFFFF</color>
+    <color name="colorEditTextBgColor">#f2f5fa</color>
+    <color name="colorEditTextBorderColor">#E9EBEF</color>
+    <color name="colorPrimaryButtonBg">#18206F</color>
+    <color name="colorPrimory">#583678</color>
+
+
+
+</resources>

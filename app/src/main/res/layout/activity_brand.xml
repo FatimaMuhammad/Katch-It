@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".activities.activity.BrandActivity">
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="147dp"
+        android:layout_height="98dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittextbg"
+        android:clickable="true"
+        android:contentDescription="click to upload logo"
+        android:focusable="true"
+        android:hint="Upload Logo "
+        android:onClick="pickImage"
+        android:scaleType="centerCrop"
+        android:src="@drawable/baseline_image_24"
+        tools:ignore="OnClick" />
+
+    <!-- Brand Name EditText -->
+    <EditText
+        android:id="@+id/brandNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextbg"
+        android:layout_marginBottom="8dp"
+        android:hint="Brand Name" />
+
+    <!-- Owner Name EditText -->
+    <EditText
+        android:id="@+id/ownerNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextbg"
+        android:layout_marginBottom="8dp"
+        android:maxLines="1"
+        android:hint="Owner Name" />
+
+    <!-- Contact Number EditText -->
+    <EditText
+        android:id="@+id/contactNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextbg"
+        android:layout_marginBottom="8dp"
+        android:hint="Contact Number" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTerms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edittextbg"
+        android:text="I agree to the Terms and Conditions" />
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btnprimary"
+        android:onClick="registerBrand"
+        android:text="Register"
+        tools:ignore="OnClick" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        tools:context=".activities.Brand">
+
+        <Button
+            android:id="@+id/showBrands"
+            android:layout_width="186dp"
+            android:layout_height="52dp"
+            android:layout_gravity="start"
+            android:background="@drawable/edittextbg"
+            android:text="View Registered Brands"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/Gotouplaod"
+            android:layout_width="186dp"
+            android:layout_height="52dp"
+            android:layout_gravity="end"
+            android:background="@drawable/edittextbg"
+            android:text="Uplaod Products"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="@+id/showBrands"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="@+id/showBrands" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>

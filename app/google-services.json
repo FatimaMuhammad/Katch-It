@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "797208071011",
+    "project_id": "katch-it-28cde",
+    "storage_bucket": "katch-it-28cde.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797208071011:android:2782c0e2a5b16819196156",
+        "android_client_info": {
+          "package_name": "com.example.brand"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfRdLq-qvz-4U9R98HLJSib5qapxeuWiU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797208071011:android:89d571dbc204528b196156",
+        "android_client_info": {
+          "package_name": "com.example.katche_it"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfRdLq-qvz-4U9R98HLJSib5qapxeuWiU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

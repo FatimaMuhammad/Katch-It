@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".activities.activity.AddProductsActivity">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="147dp"
+        android:layout_height="98dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittextbg"
+        android:clickable="true"
+        android:contentDescription="@null"
+        android:focusable="true"
+        android:onClick="openGallery"
+        android:scaleType="centerCrop"
+        android:src="@drawable/baseline_image_24"
+        tools:ignore="OnClick"/>
+    <TextView
+        android:textColor="@color/colorPrimaryText"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Products Details"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/productNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Name"
+        android:background="@drawable/edittextbg"
+        android:inputType="text"
+        android:maxLines="1"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Validity -->
+    <EditText
+        android:id="@+id/validityEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Validity"
+        android:background="@drawable/edittextbg"
+        android:inputType="text"
+        android:maxLines="1"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Discount Details -->
+    <EditText
+        android:id="@+id/discountDetailsEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Discount Details"
+        android:background="@drawable/edittextbg"
+        android:inputType="text"
+        android:maxLines="1"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Upload Button -->
+    <Button
+        android:id="@+id/uploadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Products"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btnprimary"/>
+
+    <Button
+        android:id="@+id/SavedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm Upload"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btnprimary"/>
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="logout"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btnprimary"/>
+
+
+</LinearLayout>
+
