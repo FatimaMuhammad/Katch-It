@@ -66,7 +66,7 @@
             android:layout_gravity="end"
             android:textColorLink="@color/itsgold"
             android:text="Forgot Password"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/colorPrimaryTextOpaque" />
 
         <Button
             android:id="@+id/btnLogIn"
@@ -83,7 +83,7 @@
             android:layout_marginTop="24dp"
             android:text="Do not Have an Account SignUp"
             android:textAlignment="center"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/colorPrimaryTextOpaque" />
         </LinearLayout>
 
     <ImageView
