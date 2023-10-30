@@ -28,6 +28,7 @@
             style="@style/TextAppearance.AppCompat.Body2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="16sp"
             android:layout_marginTop="8dp"
             android:textColor="@color/white"
             android:textStyle="bold"
@@ -39,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Your Score: "
+            android:text="Now you are a part of Katch-it Family "
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textStyle="bold" />
