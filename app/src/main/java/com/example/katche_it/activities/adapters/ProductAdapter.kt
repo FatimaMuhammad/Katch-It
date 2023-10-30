@@ -1,5 +1,7 @@
 package com.example.katche_it.activities.adapters
 
+
+
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
@@ -8,14 +10,11 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.katche_it.R
+import com.example.katche_it.activities.activity.ChooseGameActivity
 import com.example.katche_it.activities.activity.DisplayProductsActivity
 import com.example.katche_it.activities.models.products
-
-
-
-import com.bumptech.glide.Glide
-import com.example.katche_it.activities.activity.MainActivity
 
 
 class ProductAdapter(private val context: DisplayProductsActivity, private val productList: List<products>) :
@@ -35,7 +34,7 @@ RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() {
 
         // Load image from the product's imageUrl using Glide
         Glide.with(context)
-            .load(product.imageUrl)
+            .load(product.imageResourceId)
             .placeholder(R.drawable.baseline_image_24)
             .into(holder.productImageView)
 
@@ -45,7 +44,7 @@ RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() {
 
         holder.itemView.setOnClickListener {
             Toast.makeText(context, product.productName, Toast.LENGTH_SHORT).show()
-            val intent = Intent(context, MainActivity::class.java)
+            val intent = Intent(context, ChooseGameActivity::class.java)
             // Add any extra data you want to pass to the activity
             // intent.putExtra("KEY", value)
             context.startActivity(intent)

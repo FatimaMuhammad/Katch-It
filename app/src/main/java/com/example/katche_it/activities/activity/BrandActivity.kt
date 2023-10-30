@@ -105,7 +105,6 @@ class BrandActivity : AppCompatActivity() {
         val contactNumber = binding.contactNumberEditText.text.toString()
         if (brandName.isNotEmpty() && ownerName.isNotEmpty() && contactNumber.isNotEmpty()) {
             val brandData = BrandData(brandName, ownerName, contactNumber, logoUrl)
-
             // Store brand information in Firebase Realtime Database
             val brandId = dbRef.push().key // Generate a unique key
             brandId?.let {
@@ -118,11 +117,11 @@ class BrandActivity : AppCompatActivity() {
                             .set(brandData)
                             .addOnSuccessListener {
                                 // Brand registration in Firestore successful
-                                Toast.makeText(this, "Brand registered successfully", Toast.LENGTH_SHORT)
+                                Toast.makeText(this, "Brand data received." +
+                                        " upload your products now. \n Once verified, your " +
+                                        "brand and products will be showcased in our app.", Toast.LENGTH_SHORT)
                                     .show()
                                 clearForm()
-                                //val intent = Intent(this, AddProductsActivity::class.java)
-                               // startActivity(intent)
                             }
                             .addOnFailureListener { e ->
                                 Toast.makeText(

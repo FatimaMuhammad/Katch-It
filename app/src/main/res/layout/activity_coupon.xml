@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".activities.activity.CouponActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="394dp"
+            android:layout_height="495dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/coupon"
+                android:layout_width="332dp"
+                android:layout_height="146dp"
+                android:layout_marginTop="16dp"
+                app:srcCompat="@drawable/coupon" />
+
+            <TextView
+                android:id="@+id/textEmail"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/itsfsy"
+                android:textStyle="bold"
+                tools:text="fsy@gmail.com" />
+
+            <TextView
+                android:id="@+id/Contactus"
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:text="Enjoy Exclusive Discounts!!\n
+      Show this to Our Brand contact No\nAvail exciting Offers.\n Happy Savings!!"
+                android:textColor="@color/itsfsy"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

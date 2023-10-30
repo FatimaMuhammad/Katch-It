@@ -2,19 +2,22 @@ package com.example.katche_it.activities.utils
 
 object ColorPicker {
         private val colors = arrayOf(
-            "#3EB9DF",
-            "#3685BC",
-            "#D36280",
-            "#E44F55",
-            "#FA8056",
-            "#818BCA",
-            "#7D659F",
-            "#51BAB3",
-            "#4FB66C",
-            "#E3AD17",
-            "#627991",
-            "#EF8EAD",
-            "#B5BFC6"
+            "#8B0000",
+            "#FF4500",
+            "#556B2F",
+            "#228B22",
+            "#800080",
+            "#191970",
+            "#FED93E",
+            "#800080",
+            "#800020",
+            "#D2691E",
+            "#000080",
+            "#800000",
+            "#708090",
+            "#3E583F",
+            "#964B00"
+
         )
         private var currentColorIndex = 0
 

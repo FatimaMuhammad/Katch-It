@@ -4,42 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back"
     tools:context=".activities.activity.LoginIntroActivity">
 
         <TextView
-            android:textColor="@color/colorPrimaryText"
             android:id="@+id/textLoginSubHeader"
             style="@style/TextAppearance.AppCompat.Subhead"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Let's Find a Way to Win Together!!"
             android:textAlignment="center"
+            android:textColor="@color/itsfsy"
+            android:textSize="20sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:textColor="@color/colorPrimaryText"
             android:id="@+id/textLoginHeader"
             style="@style/TextAppearance.AppCompat.Headline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="8dp"
             android:text="Welcome To Katch It"
+            android:textColor="@color/itsfsy"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/textLoginSubHeader"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="180dp"
-            android:layout_height="180dp"
+            android:layout_width="333dp"
+            android:layout_height="237dp"
             android:layout_marginBottom="8dp"
-            android:src="@drawable/brand"
+            android:src="@drawable/lettss"
             android:textAlignment="center"
             app:layout_constraintBottom_toTopOf="@+id/textLoginHeader"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
@@ -47,9 +52,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:text="Get Started"
             android:background="@drawable/btnprimary"
+            android:text="Get Started"
             android:textAlignment="center"
+            android:textAllCaps="false"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/textLoginSubHeader"
             app:layout_constraintHorizontal_bias="0.289"
@@ -57,14 +63,14 @@
             app:layout_constraintTop_toBottomOf="@+id/textLoginSubHeader" />
 
         <ImageView
-            android:src="@drawable/wave"
-            android:layout_width="0dp"
-            android:layout_height="120dp"
+            android:layout_width="412dp"
+            android:layout_height="219dp"
             android:scaleType="centerCrop"
+            android:src="@drawable/itsgreen"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
-
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

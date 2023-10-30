@@ -5,6 +5,6 @@
     <size android:height="40dp" />
     <padding android:bottom="8dp" android:left="16dp" android:right="8dp" android:top="8dp"></padding>
 
-    <stroke android:color="@color/colorPrimary" android:width="2dp"></stroke>
+    <stroke android:color="@color/itsgold" android:width="2dp"></stroke>
 
 </shape>

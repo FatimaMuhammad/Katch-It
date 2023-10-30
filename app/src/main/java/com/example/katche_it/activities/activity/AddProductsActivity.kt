@@ -3,12 +3,12 @@ package com.example.katche_it.activities.activity
 import android.app.Activity
 import android.content.Intent
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.katche_it.activities.models.products
 import com.example.katche_it.databinding.ActivityAddProductsBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -54,12 +54,12 @@ class AddProductsActivity : AppCompatActivity() {
             // Upload product data to Firestore
             val db = FirebaseFirestore.getInstance()
             val productsCollection = db.collection("products")
-            val products = products(productName, discountDetails, validity)
+            val products = products(productName, discountDetails, validity, imageResourceId = 100)
 
             productsCollection.add(products)
                 .addOnSuccessListener {
                     // Brand registration in Firestore successful
-                    //Toast.makeText(this, "Products Add successfully", Toast.LENGTH_SHORT)
+                    // Toast.makeText(this, "Products Add successfully", Toast.LENGTH_SHORT)
                         //.show()
                     //clearEditTextFields()
                     val intent = Intent(this, DisplayProductsActivity::class.java)
@@ -86,7 +86,7 @@ class AddProductsActivity : AppCompatActivity() {
                 uploadImage(selectedImageUri)
             }
             binding.SavedButton.setOnClickListener {
-                Toast.makeText(this, "Products Add successfully", Toast.LENGTH_SHORT)
+                Toast.makeText(this, "Data received. Authenticating your account.\n Once verified, your products will be showcased in our app", Toast.LENGTH_SHORT)
                     .show()
                 clearEditTextFields()
                 val intent = Intent(this, DisplayProductsActivity::class.java)
@@ -124,9 +124,7 @@ class AddProductsActivity : AppCompatActivity() {
     private fun uploadImage(imageUri: Uri) {
         val imageFileName = "${System.currentTimeMillis()}.jpg"
         val imageRef = storageReference.child(imageFileName)
-
         val uploadTask = imageRef.putFile(imageUri)
-
         uploadTask.addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 // Image uploaded successfully, get the download URL
@@ -140,12 +138,13 @@ class AddProductsActivity : AppCompatActivity() {
                     // Upload product data including the image URL to Firestore
                     val db = FirebaseFirestore.getInstance()
                     val productsCollection = db.collection("products")
-                    val products = products(productName, discountDetails, validity, downloadUrl)
-
+                    val products = products(productName, discountDetails, validity, imageResourceId = 100 )
                     productsCollection.add(products)
                         .addOnSuccessListener {
                             // Brand registration in Firestore successful
-                            Toast.makeText(this, "ProductsImages Add successfully", Toast.LENGTH_SHORT)
+                            Toast.makeText(this, "Data received. Authenticating" +
+                                    " your \n account.Once verified, your products " +
+                                    "\n will be showcased in our app", Toast.LENGTH_SHORT)
                                 .show()
                             clearEditTextFields()
                             val intent = Intent(this, DisplayProductsActivity::class.java)

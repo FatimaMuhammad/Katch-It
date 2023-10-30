@@ -1,12 +1,12 @@
 package com.example.katche_it.activities.activity
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.katche_it.R
 import com.example.katche_it.activities.adapters.QuizAdapter
@@ -14,9 +14,9 @@ import com.example.katche_it.activities.models.Quiz
 import com.example.katche_it.databinding.ActivityMainBinding
 import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 import java.text.SimpleDateFormat
 import java.util.Date
-import com.google.firebase.firestore.FirebaseFirestore
 
 class MainActivity : AppCompatActivity() {
     private lateinit var actionBarDrawerToggle: ActionBarDrawerToggle
@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity() {
                 Log.d("DATEPICKER", datePicker.headerText)
                 val dateFormatter = SimpleDateFormat("dd-mm-yyyy")
                 val date = dateFormatter.format(Date(it))
-                val intent = Intent(this, QuestionActivity::class.java)
+                val intent = Intent(this, MainActivity::class.java)
                 intent.putExtra("DATE", date)
                 startActivity(intent)
             }

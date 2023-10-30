@@ -8,7 +8,7 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
-    <color name="colorPrimary">#471B55</color>
+    <color name="colorPrimary">#016102</color>
     <color name="white">#FFFFFFFF</color>
     <color name="green">#90D611</color>
     <color name="yellow">#F1F70E</color>
@@ -28,20 +28,30 @@
     <color name="grassgreen">#008000</color>
     <color name="greenbottom">#008900</color>
     <color name="greenpcb">#002d04</color>
+    <color name="fsy">#14372A</color>
+    <color name="itsfsy">#016102</color>
+    <color name="itsred">#960102</color>
+    <color name="itsgold">#CCB001</color>
+    <color name="gold">#E8BE4f</color>
     <color name="themesgreen">#5fb307</color>
-    <color name="colorpPrimary">#583678</color>
-    <color name="colorPrimEry">#58386B</color>
-    <color name="colordrkPrimary">#633B77</color>
+    <color name="colorpPrimary">#016102</color>
+    <color name="colorPrimEry">#016102</color>
+    <color name="colordrkPrimary">#016102</color>
     <color name="colordarkPrimary">#18206F</color>
     <color name="colorPrimaryDark">#11164E</color>
     <color name="colorAccent">#ffd700</color>
     <color name="colorPrimaryText">#18206F</color>
     <color name="colorPrimaryTextOpaque">#18206F</color>
-    <color name="colorPrimaryButton">#FFFFFF</color>
     <color name="colorEditTextBgColor">#f2f5fa</color>
     <color name="colorEditTextBorderColor">#E9EBEF</color>
     <color name="colorPrimaryButtonBg">#18206F</color>
-    <color name="colorPrimory">#583678</color>
+    <color name="colorPrimory">#016102</color>
+    <color name="colorDarkGlass">#33000000</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorWoodText">#8e4e15</color>
+    <color name="colorWhite">#eeeeee</color>
+    <color name="colorYellow">#f5a762</color>
+    <color name="primary_material_light">#f5f5f5</color>
 
 
 

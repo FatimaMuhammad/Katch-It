@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="290dp"
+    android:background="@color/colorAccent"
+    tools:context=".activities.activity.DashBoard">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="71dp"
+                        android:layout_height="62dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="32dp"
+                        android:src="@drawable/profile"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="123dp"
+                        android:layout_height="28dp"
+                        android:layout_marginStart="112dp"
+                        android:text="Hi, User"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/imageView5"
+                        app:layout_constraintVertical_bias="0.515"
+                        tools:ignore="MissingConstraints" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="32dp"
+                    android:text="Find your Favourite Brands \n Products and Games Here!!"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextText"
+                    android:layout_width="346dp"
+                    android:layout_height="62dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/crd_bg"
+                    android:drawableStart="@drawable/search"
+                    android:drawableEnd="@drawable/microphone"
+                    android:drawablePadding="26dp"
+                    android:ems="10"
+                    android:hint="Search"
+                    android:inputType="text"
+                    android:padding="16dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="166dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="32dp"
+                        android:layout_weight="1"
+                        android:text="Brands"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="134dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="32dp"
+                        android:text="View All"
+                        android:textColor="@color/colorpPrimary"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

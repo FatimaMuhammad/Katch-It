@@ -4,16 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".activities.activity.BrandActivity">
+
+    <TextView
+        android:id="@+id/textLoginHeader"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Brand Registeration Form"
+        android:textColor="@color/itsfsy"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/textLoginSubHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Brand Name EditText -->
     <ImageView
         android:id="@+id/logoImageView"
-        android:layout_width="147dp"
-        android:layout_height="98dp"
+        android:layout_width="232dp"
+        android:layout_height="95dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/edittextbg"
+        android:layout_marginVertical="30dp"
         android:clickable="true"
         android:contentDescription="click to upload logo"
         android:focusable="true"
@@ -21,15 +37,16 @@
         android:onClick="pickImage"
         android:scaleType="centerCrop"
         android:src="@drawable/baseline_image_24"
-        tools:ignore="OnClick" />
+        tools:ignore="OnClick"
+        tools:layout_editor_absoluteX="-32dp"
+        tools:layout_editor_absoluteY="-265dp" />
 
-    <!-- Brand Name EditText -->
     <EditText
         android:id="@+id/brandNameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/edittextbg"
         android:layout_marginBottom="8dp"
+        android:background="@drawable/edittextbg"
         android:hint="Brand Name" />
 
     <!-- Owner Name EditText -->
@@ -37,19 +54,19 @@
         android:id="@+id/ownerNameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/edittextbg"
         android:layout_marginBottom="8dp"
-        android:maxLines="1"
-        android:hint="Owner Name" />
+        android:background="@drawable/edittextbg"
+        android:hint="Owner Name"
+        android:maxLines="1" />
 
     <!-- Contact Number EditText -->
     <EditText
         android:id="@+id/contactNumberEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/edittextbg"
         android:layout_marginBottom="8dp"
-        android:hint="Contact Number" />
+        android:background="@drawable/edittextbg"
+        android:hint="Contact Number/CNIC" />
 
     <CheckBox
         android:id="@+id/checkBoxTerms"
@@ -60,28 +77,37 @@
         android:text="I agree to the Terms and Conditions" />
 
     <!-- Register Button -->
+
     <Button
         android:id="@+id/registerButton"
-        android:layout_width="match_parent"
+        android:layout_width="343dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
         android:background="@drawable/btnprimary"
         android:onClick="registerBrand"
-        android:text="Register"
-        tools:ignore="OnClick" />
+        android:text="Confirm Register"
+        android:textAllCaps="false"
+        tools:ignore="OnClick"
+        tools:layout_editor_absoluteX="-20dp"
+        tools:layout_editor_absoluteY="-64dp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="376dp"
-        android:layout_height="wrap_content"
-        android:padding="0dp"
-        tools:context=".activities.Brand">
+        android:layout_width="303dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        tools:context=".activities.Brand"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <Button
             android:id="@+id/showBrands"
-            android:layout_width="186dp"
-            android:layout_height="52dp"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
             android:layout_gravity="start"
-            android:background="@drawable/edittextbg"
+            android:background="@drawable/btnprimary"
+            android:paddingStart="16dp"
             android:text="View Registered Brands"
             android:textAllCaps="false"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -90,10 +116,11 @@
 
         <Button
             android:id="@+id/Gotouplaod"
-            android:layout_width="186dp"
-            android:layout_height="52dp"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
             android:layout_gravity="end"
-            android:background="@drawable/edittextbg"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/btnprimary"
             android:text="Uplaod Products"
             android:textAllCaps="false"
             app:layout_constraintBottom_toBottomOf="@+id/showBrands"
@@ -106,7 +133,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.5" />
+            app:layout_constraintGuide_end="151dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/Contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="We will conatct You soon.\n for any queries , contact us katchit@gmail.com"
+        android:textColor="@color/itsfsy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</LinearLayout>

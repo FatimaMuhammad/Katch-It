@@ -26,7 +26,7 @@ class VideoActivity : AppCompatActivity() {
             btnSkipVideo = binding.btnSkip
             btnNext = binding.btnNext
 
-            val videoUrl = "https://www.youtube.com/shorts/G5g4jp7GVWI?t=6&feature=share" // Replace with your video URL
+            val videoUrl = "https://www.youtube.com/watch?v=AQcgssfr3lw" // Replace with your video URL
 
             videoView.setVideoURI(Uri.parse(videoUrl))
             videoView.setOnPreparedListener { mp ->

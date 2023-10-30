@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back"
     android:padding="25dp"
     tools:context=".activities.activity.DisplayProductsActivity">
-
 
 
     <androidx.recyclerview.widget.RecyclerView
@@ -14,5 +14,4 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/edittextbg" />
-
 </RelativeLayout>

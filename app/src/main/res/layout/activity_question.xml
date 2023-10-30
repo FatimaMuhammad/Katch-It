@@ -4,18 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".activities.activity.QuestionActivity">
-
 
 
     <TextView
         android:id="@+id/description"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorPrimaryText"
-        android:textSize="16sp"
+        android:textColor="@color/itsfsy"
+        android:textSize="32sp"
+        android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -52,13 +53,12 @@
         app:layout_constraintGuide_percent="0.5" />
 
 
-
     <Button
         android:id="@+id/btnNext"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Next"
         android:background="@drawable/edittextbg"
+        android:text="Next"
         android:textAllCaps="false"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -80,8 +80,7 @@
         app:layout_constraintBottom_toTopOf="@+id/horizontal_guideline"
         app:layout_constraintEnd_toEndOf="@+id/description"
         app:layout_constraintStart_toStartOf="@+id/description"
-        app:layout_constraintTop_toBottomOf="@+id/description"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/description" />
 
     <Button
         android:id="@+id/btnSubmit"

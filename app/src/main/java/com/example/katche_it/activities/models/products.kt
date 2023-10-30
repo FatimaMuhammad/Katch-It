@@ -4,6 +4,6 @@ data class products(
     val productName: String = "",
     val discountDetails: String = "",
     val validity: String = "",
-    val imageUrl: String = ""
+    val imageResourceId: Int
 
 )

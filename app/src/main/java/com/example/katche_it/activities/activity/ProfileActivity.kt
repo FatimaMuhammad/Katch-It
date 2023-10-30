@@ -1,9 +1,8 @@
 package com.example.katche_it.activities.activity
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.katche_it.activities.models.Question
+import androidx.appcompat.app.AppCompatActivity
 import com.example.katche_it.databinding.ActivityProfileBinding
 import com.google.firebase.auth.FirebaseAuth
 

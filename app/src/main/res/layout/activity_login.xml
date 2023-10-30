@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back"
     tools:context=".activities.activity.LoginActivity">
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
+
         android:gravity="center_vertical"
         android:orientation="vertical"
         android:paddingStart="32dp"
@@ -55,14 +57,24 @@
             android:inputType="numberPassword"
             android:textSize="16sp" />
 
+        <TextView
+            android:id="@+id/forgotpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="210dp"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="end"
+            android:textColorLink="@color/itsgold"
+            android:text="Forgot Password"
+            android:textColor="@color/colorPrimary" />
+
         <Button
-            android:background="@drawable/btnprimary"
             android:id="@+id/btnLogIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:text="LOG IN"
-          />
+            android:background="@drawable/btnprimary"
+            android:text="LOG IN" />
 
         <TextView
             android:id="@+id/btnSignup"
@@ -72,15 +84,15 @@
             android:text="Do not Have an Account SignUp"
             android:textAlignment="center"
             android:textColor="@color/colorPrimary" />
-    </LinearLayout>
+        </LinearLayout>
 
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="0dp"
-            android:layout_height="120dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/wave"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/itsgreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

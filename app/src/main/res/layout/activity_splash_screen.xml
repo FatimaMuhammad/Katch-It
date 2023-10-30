@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#DCD2B9"
     tools:context=".activities.activity.SplashScreenActivity">
 
     <ImageView
-        android:layout_width="358dp"
-        android:layout_height="644dp"
+        android:layout_width="359dp"
+        android:layout_height="364dp"
         android:layout_centerInParent="true"
-        android:src="@drawable/katchit" />
+        android:src="@drawable/splash" />
 </RelativeLayout>

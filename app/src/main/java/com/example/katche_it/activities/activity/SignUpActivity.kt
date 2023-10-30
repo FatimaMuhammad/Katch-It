@@ -1,9 +1,9 @@
 package com.example.katche_it.activities.activity
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.katche_it.R
 import com.example.katche_it.databinding.ActivitySignUpBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -29,22 +29,18 @@ class SignUpActivity : AppCompatActivity() {
 
         }
     }
-
     private fun signupUser() {
         val email = binding.etEmailAddress.text.toString()
         val password = binding.etPassword.text.toString()
         val confirmPassword = binding.etConfirmPassword.text.toString()
-
         if (email.isBlank() || password.isBlank() || confirmPassword.isBlank()) {
             Toast.makeText(this, "Email and password can't be blank", Toast.LENGTH_LONG).show()
             return
         }
-
         if (password != confirmPassword) {
             Toast.makeText(this, "password and confirm Password do not match", Toast.LENGTH_SHORT)
                 .show()
             return
-
         }
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) {

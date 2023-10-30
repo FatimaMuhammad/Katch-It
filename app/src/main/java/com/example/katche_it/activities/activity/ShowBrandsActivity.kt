@@ -6,10 +6,8 @@ import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
-
 import com.example.katche_it.activities.adapters.BrandAdapter
 import com.example.katche_it.activities.models.BrandData
-
 import com.example.katche_it.databinding.ActivityShowBrandsBinding
 import com.google.firebase.firestore.FirebaseFirestore
 
@@ -45,13 +43,13 @@ class ShowBrandsActivity : AppCompatActivity() {
     }
 
     private fun populateDummyData() {
-        brandslist.add(BrandData("ijk","Ali","0986422","www.google.com"))
-        brandslist.add(BrandData("fashionista","alina","0718942","www.google.com"))
-        brandslist.add(BrandData("babafoods","tahir","0321132","www.google.com"))
-        brandslist.add(BrandData("homedecore","Alia","0986422","www.google.com"))
-        brandslist.add(BrandData("homechefs","sikanda","0986422","www.google.com"))
-        brandslist.add(BrandData("homesalon","Aalima","0986422","www.google.com"))
-        brandslist.add(BrandData("homemaid","farah","0986422","www.google.com"))
+        brandslist.add(BrandData("IJK","Ali","03367890909","www.google.com"))
+        brandslist.add(BrandData("Fashionista","alina","03009874321","www.google.com"))
+        brandslist.add(BrandData("Baba Foods","tahir","03008974567","www.google.com"))
+        brandslist.add(BrandData("Home Decor","Alia","03365678451","www.google.com"))
+        brandslist.add(BrandData("Home Chefs","sikanda","03363245544","www.google.com"))
+        brandslist.add(BrandData("Home Salon","Aalima","03367898989","www.google.com"))
+        brandslist.add(BrandData("Home Maid","farah","03003232211","www.google.com"))
 
     }
 

@@ -16,6 +16,25 @@
         android:theme="@style/AppThemeNoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".activities.activity.CouponActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".activities.activity.ForgotPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.activity.BottomNavigation"
+            android:exported="true" />
+        <activity
+            android:name=".activities.activity.PuzzleGameActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.activity.ChooseGameActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.activity.DashBoard"
+            android:exported="false" />
+        <activity
             android:name=".activities.activity.VideoActivity"
             android:exported="true" />
         <activity
@@ -41,11 +60,12 @@
             android:name=".activities.activity.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
+
         <activity
             android:name=".activities.activity.BrandActivity"
             android:exported="true" />
@@ -54,8 +74,7 @@
             android:exported="true" />
         <activity
             android:name=".activities.activity.MainActivity"
-            android:exported="true"/>
-
+            android:exported="true" />
         <activity
             android:name=".activities.activity.SignUpActivity"
             android:exported="true" />
